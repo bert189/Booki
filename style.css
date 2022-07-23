@@ -1,0 +1,518 @@
+/* POLICE */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* GLOBAL */
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+	/* line-height: 1; */
+}
+
+.container {
+    max-width: 1600px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* img {
+    vertical-align: bottom;
+} */
+
+
+/* HEADER */
+
+header {
+    padding-bottom: 25px;
+    /* border-bottom: 1px solid #F2F2F2; */
+    box-shadow: 0px 2px 3px #F2F2F2;
+    background-color: rgb(253, 253, 253);
+}
+
+header img {
+    margin-top: 20px;
+}
+
+header img:hover {
+    opacity: 0.85;;
+}
+
+#logo-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 50px;
+    border-top: 3px solid transparent;
+    font-size: 18px;
+}
+
+nav li:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/* form */
+
+form h1 {
+    font-weight: 700;
+    font-size: 21px;
+    margin: 20px 0 0;
+}
+
+form p {
+    margin: 10px 0 20px;
+}
+
+#search {
+    display: flex;
+    width: fit-content;
+    border-radius: 17px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px rgb(0 0 0 / 10%)
+}
+
+#locate {
+    padding: 15px 18px 13px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    font-size: 18px;
+}
+
+#locate:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#search input {
+    padding: 14px 18px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#search input[type=text] {
+    border: 2px solid #F2F2F2;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    width: 220px;
+}
+
+#search input[type=text]:focus {
+    outline: none;
+    border: 2px solid rgb(175, 175, 175);
+    border-radius: 3px;
+    background-color: rgb(254, 254, 247);
+    box-shadow: inset 0 0 1px rgb(175, 175, 175);
+}
+
+#search input[type=submit] {
+    background-color: #0065FC;
+    color: white;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border: none;
+}
+
+#search input[type=submit]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/* MAIN */
+
+/* Filtres */
+
+#filters {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 25px 0;
+}
+
+#filters h4 {
+    font-weight: 700;
+    /* font-size: 17px; */
+    margin-right: 10px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(0 0 0 / 15%);
+    height: 46px;
+    border-radius: 23px;
+    margin-left: 24px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px rgb(0 0 0 / 10%)
+
+}
+
+.filter:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.filter-icon-wrapper {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 2px;
+    font-size: 19px;
+}
+
+.filter-text-wrapper {
+    padding: 0 20px 0 10px ;
+}
+
+/* Info */
+
+#number {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+#info-wrapper {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0 0 0 / 15%);
+    border-radius: 50%;
+    color: #0065FC;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#number p {
+    margin-left: 10px;
+}
+
+/* HEBERGEMENTS */
+
+/* Layout */
+
+#accomodations {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;   
+}
+
+#filtered {
+    flex: 2.3;
+}
+
+#popular {
+    flex: 1;
+    margin-left: 40px;
+}
+
+/* Général */
+
+#accomodations section {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 41px 40px 46px;
+}
+
+.accomodation {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px rgb(0 0 0 / 10%);
+}
+
+#accomodations h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 23px;
+}
+
+.accomodation:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.accomodation img {
+    padding: 5px;
+    object-fit: cover;
+}
+
+.accomodation-text-rating-wrapper {
+    padding: 1px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accomodation p {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.night-price-wrapper {
+    display: flex;
+}
+
+.night-price-wrapper p:first-of-type {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rating {
+    padding-top: 8px;
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+
+.accomodation h5 {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.accomodation i {
+    color: #0065FC;
+}
+
+i.empty-star {
+    color: rgb(0 0 0 / 15%);
+}
+
+/* Filtrés */
+
+#filtered-wrapper {
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+#filtered .accomodation {
+    height: 200px;
+    width: calc((100% - 60px) / 3);
+}
+
+#filtered .accomodation img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 62%;    
+}
+
+#filtered h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#more {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 38px;
+}
+
+#more:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Populaires */
+
+#accomodations #popular {       
+    padding: 41px 40px 40px;
+}
+
+#popular h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#popular h2 i {
+    font-size: 20px;
+}
+
+#popular-wrapper {
+    height: calc(100% - 26px - 21px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#popular .accomodation {
+    display: flex;
+    height: calc((100% - 70px) /3);
+}
+
+#popular .accomodation img {
+    width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#popular .accomodation-text-rating-wrapper {
+    padding: 15px;
+    width: 60%;
+}
+
+
+/* ACTIVITES */
+
+#attractions {
+    padding: 40px 0 60px;
+}
+
+#attractions h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+
+#attractions-wrapper {
+    display: flex;
+    height: 445px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.attraction {
+    width: calc((100% - (3 * 45px)) / 4);
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px rgb(0 0 0 / 10%)
+}
+
+.attraction:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.attraction img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: calc(100% - 55px);
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.attraction h5 {
+    font-weight: 700; 
+    padding: 0 20px;
+    height: 55px;
+    line-height: 55px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.fifty-nine-percent-height {
+    height: calc(0.59 * (445px - 45px));
+}
+
+.forty-one-percent-height {
+    height: calc(0.41 * (445px - 45px));
+}
+
+.forty-height-percent-height {
+    height: calc(0.48 * (445px - 45px));
+}
+
+.fifty-two-percent-height {
+    height: calc(0.52 * (445px - 45px));
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #F2F2F2;
+}
+
+#footer-wrapper {
+    display: flex;
+}
+
+footer section {
+    width: 33%;
+    padding: 45px 40px 60px 0;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+
+footer li {
+    font-size: 16px;
+    padding: 4px 0;
+    margin: 4px 0;
+}
+
+footer li:hover {
+    opacity: 0.7;    
+}
+
+
+/* BREAKPOINT desktop étroit */
+
+@media only screen and (max-width: 1224px) {
+
+
+
+}
+
+
+/* BREAKPOINT tablette */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+/* BREAKPOINT tablette portrait */
+
+@media only screen and (min-width: 991px) {
+
+}
+
+
+
+/* BREAKPOINT mobile */
+
+@media only screen and (max-width: 767px) {
+
+}
+
+
+
+/* BREAKPOINT mobile portrait */
+
+@media only screen and (max-width: 600px) {
+
+}
