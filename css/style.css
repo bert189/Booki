@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
+
 /* GLOBAL desktop */
 
 body {
@@ -21,10 +22,6 @@ a {
     text-decoration: none;
     color: unset;
 }
-
-/* img {
-    vertical-align: bottom;
-} */
 
 
 /* HEADER */
@@ -546,7 +543,6 @@ footer li:hover {
     }
 
 }
-
 
 
 /* BREAKPOINT tablette paysage */
